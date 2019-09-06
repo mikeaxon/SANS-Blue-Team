@@ -1,0 +1,51 @@
+site_name: 'SecXXX Wiki'
+site_description: 'SANS SecXXX Class Wiki'
+site_author: 'Author(s) name(s)'
+nav:
+    - Home: 'index.md'
+    - Labs:
+        - 'Lab 1.1': 'Labs/XXX_1/1/secxxx.1.1.md'
+
+...
+
+theme:
+  name: 'material'
+  palette:
+    primary: 'white'
+    accent: 'indigo'
+  logo:
+    icon: 'dashboard'
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+# per https://squidfunk.github.io/mkdocs-material/extensions/pymdown/
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+plugins:
+    - search
+#    - pdf-export:
+#          verbose: false
+#          media_type: print
+#          combined: false
+#          #combined_output_path: 508-workbook.pdf
+#          enabled_if_env: ENABLE_PDF_EXPORT
+extra_css:
+#  - css/pdf.css
+  - css/html.css
